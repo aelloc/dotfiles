@@ -51,6 +51,7 @@ augroup END
 set t_Co=256
 
 set mouse=a
+set clipboard=unnamed
 
 set nobackup
 set noswapfile
