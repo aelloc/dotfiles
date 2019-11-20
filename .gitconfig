@@ -1,10 +1,20 @@
-# This is Git's per-user configuration file.
 [user]
   name = Calvin Gerling
   email = calvin.gerling@singlebit.org
 [core]
   editor = nvim
   pager = diff-so-fancy | less --tabs=2 -RFX
+[alias]
+  co = checkout
+  cs = "!f() { \
+        TASK_ID=#$(cut -d'-' -f1 <<< $(git rev-parse --abbrev-ref HEAD)); \
+        EDITOR=vim; \
+        if [ -z ${1} ]; then MOVE_TO_COLUMN=""; else MOVE_TO_COLUMN=[${1}]; fi; \
+        COMMIT_MESSAGE="[${TASK_ID}${MOVE_TO_COLUMN}]"; \
+        git commit -e -m "\"${COMMIT_MESSAGE}\""; \
+    }; f"
+  dc = diff --cached
+  pf = push --force-with-lease
 [color]
   ui = true
 [color "diff-highlight"]
