@@ -34,6 +34,8 @@ set showmatch
 
 set cursorline
 set smarttab
+set splitbelow
+set splitright
 
 set scrolloff=2
 
@@ -76,4 +78,9 @@ nmap <unique> <C-p>v <Plug>(PickerVsplit)
 
 " Key Mappings
 nnoremap <esc> :noh<cr>
+
+nnoremap <C-j>  <C-w><C-j>
+nnoremap <C-k>  <C-w><C-k>
+nnoremap <C-l>  <C-w><C-l>
+nnoremap <C-h>  <C-w><C-h>
 
