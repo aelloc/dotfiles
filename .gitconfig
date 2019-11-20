@@ -1,6 +1,7 @@
 [user]
   name = Calvin Gerling
   email = calvin.gerling@singlebit.org
+  signingkey = D5A5839EA972F020
 [core]
   editor = nvim
   pager = diff-so-fancy | less --tabs=2 -RFX
@@ -29,3 +30,5 @@
   old = red bold
   new = green bold
   whitespace = red reverse
+[commit]
+  gpgsign = true
