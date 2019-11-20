@@ -68,10 +68,11 @@ let g:netrw_banner = 0
 let g:mix_format_on_save = 1
 
 " Vim Picker
-nmap <unique> <space>p <Plug>(PickerEdit)
-nmap <unique> <space>ph <Plug>(PickerSplit)
-nmap <unique> <space>pt <Plug>(PickerTabedit)
-nmap <unique> <space>pv <Plug>(PickerVsplit)
+
+nmap <unique> <C-p> <Plug>(PickerEdit)
+nmap <unique> <C-p>h <Plug>(PickerSplit)
+nmap <unique> <C-p>t <Plug>(PickerTabedit)
+nmap <unique> <C-p>v <Plug>(PickerVsplit)
 
 " Key Mappings
 nnoremap <esc> :noh<cr>
