@@ -6,12 +6,12 @@ set encoding=utf-8
 " Plugins
 call plug#begin(stdpath('data') . 'plugs')
 
+Plug 'prabirshrestha/async.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'tpope/vim-surround'
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
-Plug 'srstevenson/vim-picker'
 Plug 'tpope/vim-endwise'
+Plug 'srstevenson/vim-picker'
+Plug 'prabirshrestha/vim-lsp'
 Plug 'tpope/vim-dadbod'
 Plug 'elixir-editors/vim-elixir', {'for': 'elixir'}
 Plug 'mhinz/vim-mix-format', {'for': 'elixir'}
