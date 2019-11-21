@@ -7,6 +7,7 @@ set encoding=utf-8
 call plug#begin(stdpath('data') . 'plugs')
 
 Plug 'mhartington/oceanic-next'
+Plug 'tpope/vim-surround'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'srstevenson/vim-picker'
