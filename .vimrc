@@ -15,6 +15,9 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'tpope/vim-dadbod'
 Plug 'elixir-editors/vim-elixir', {'for': 'elixir'}
 Plug 'mhinz/vim-mix-format', {'for': 'elixir'}
+Plug 'MaxMEllon/vim-jsx-pretty', {'for': 'javascript'}
+Plug 'othree/yajs.vim', {'for': 'javascript'}
+Plug 'jiangmiao/auto-pairs', {'for': 'javascript'}
 
 call plug#end()
 
