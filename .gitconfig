@@ -6,6 +6,7 @@
   editor = nvim
   pager = diff-so-fancy | less --tabs=2 -RFX
 [alias]
+  p = push
   co = checkout
   cs = "!f() { \
         TASK_ID=#$(cut -d'-' -f1 <<< $(git rev-parse --abbrev-ref HEAD)); \
