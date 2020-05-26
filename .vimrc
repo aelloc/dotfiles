@@ -46,7 +46,7 @@ set scrolloff=2
 set hidden
 
 set number relativenumber
-augroup numbertoggle
+augroup number_toggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
@@ -62,7 +62,7 @@ set noswapfile
 
 set ruler
 
-augroup updatebuffer
+augroup update_buffer
 	au FocusLost,WinLeave * :silent! wa
 	au FocusGained,BufEnter * :silent! !
 augroup END
