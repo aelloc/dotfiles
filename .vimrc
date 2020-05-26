@@ -73,6 +73,10 @@ let g:netrw_banner = 0
 
 " Elixir
 let g:mix_format_on_save = 1
+augroup word_boundary
+  au!
+  autocmd BufNewFile,BufRead *.ex,*.exs set iskeyword-=_
+augroup END
 
 " Vim Picker
 nnoremap <C-p> :PickerEdit<cr>
