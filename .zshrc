@@ -97,21 +97,23 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
+# General
+alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 function pair() {open vnc://$1.local}
 
+# Elixir
 alias mt='MIX_ENV=test mix test'
 alias mtf='mt --failed'
 alias mtw='mt --only wip'
 alias iex='iex --erl "-kernel shell_history enabled"'
 
+# Node
 export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
-
-
+# ASDF
 . /usr/local/opt/asdf/asdf.sh
-
 . /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
+
