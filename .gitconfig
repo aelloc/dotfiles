@@ -9,10 +9,9 @@
   p = push
   co = checkout
   cs = "!f() { \
-        TASK_ID=#$(cut -d'-' -f1 <<< $(git rev-parse --abbrev-ref HEAD)); \
+        TASK_ID=$(cut -d'/' -f1 <<< $(git rev-parse --abbrev-ref HEAD)); \
         EDITOR=vim; \
-        if [ -z ${1} ]; then MOVE_TO_COLUMN=""; else MOVE_TO_COLUMN=[${1}]; fi; \
-        COMMIT_MESSAGE="[${TASK_ID}${MOVE_TO_COLUMN}]"; \
+        COMMIT_MESSAGE="[${TASK_ID}]"; \
         git commit -e -m "\"${COMMIT_MESSAGE}\""; \
     }; f"
   dc = diff --cached
