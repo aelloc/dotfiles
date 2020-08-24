@@ -1,8 +1,8 @@
-brew git
-brew zsh 
-brew zsh-completions
+brew "git"
+brew "zsh"
+brew "zsh-completions"
 
-brew asdf
+brew "asdf"
 
-brew neovim
-brew fzy
+brew "neovim"
+brew "fzy"
