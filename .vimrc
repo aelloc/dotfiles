@@ -18,6 +18,7 @@ Plug 'mhinz/vim-mix-format', {'for': 'elixir'}
 Plug 'MaxMEllon/vim-jsx-pretty', {'for': 'javascript'}
 Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'jiangmiao/auto-pairs', {'for': 'javascript'}
+Plug 'rust-lang/rust.vim', {'for': 'rust'}
 
 call plug#end()
 
@@ -77,6 +78,9 @@ augroup word_boundary
   au!
   autocmd BufNewFile,BufRead *.ex,*.exs set iskeyword-=_
 augroup END
+
+" Rust
+let g:rustfmt_autosave = 1
 
 " Vim Picker
 nnoremap <C-p> :PickerEdit<cr>
