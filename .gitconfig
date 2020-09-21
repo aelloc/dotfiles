@@ -16,6 +16,7 @@
     }; f"
   dc = diff --cached
   pf = push --force-with-lease
+  pb = "!f() { git push -u origin $(git rev-parse --abbrev-ref HEAD); }; f"
 [color]
   ui = true
 [color "diff-highlight"]
