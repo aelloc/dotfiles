@@ -1,7 +1,7 @@
 [user]
   name = Calvin Gerling
-  email = calvin.gerling@singlebit.org
-  signingkey = D5A5839EA972F020
+  email = calvin@gerling.sh
+  signingkey = 0DAEF8AA768557C2
 [core]
   editor = nvim
   pager = diff-so-fancy | less --tabs=2 -RFX
