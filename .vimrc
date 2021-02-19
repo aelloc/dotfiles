@@ -36,6 +36,7 @@ set backspace=indent,eol,start
 set autoindent
 set copyindent
 set showmatch
+set spell
 
 set cursorline
 set smarttab
